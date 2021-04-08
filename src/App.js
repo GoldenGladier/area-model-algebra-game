@@ -1,20 +1,14 @@
 import './App.css';
-// IMPORTANDO COMPONENTES
-import ItemMenu from './components/itemMenu';
+import { Router, Route, browserHistory } from 'react-router';
+import Home from './components/home';
+import level1 from './components/level1';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Choose Your Level!</h1>
-      <div className="content">
-        <ItemMenu name="Low" number="01"/>
-        <ItemMenu name="Low-Medium" number="02"/>
-        <ItemMenu name="Medium" number="03"/>
-        <ItemMenu name="High" number="04"/>
-        <ItemMenu name="Very High" number="05"/>
-        <ItemMenu name="Insane" number="06"/>        
-      </div>
-    </div>
+    <Router history={browserHistory}>
+      <Route path="/" component={Home} />
+      <Route path="level1" component={level1} />
+    </Router>
   );
 }
 

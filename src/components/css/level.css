@@ -1,0 +1,40 @@
+.center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Level .content{
+    /* background: tomato; */
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+}
+.board-content{
+    width: 60%;
+}
+.top-data-line, .top-data{
+    height: 10px;
+    width: 40%;
+}
+.top-data .col{
+    border: 0;   
+}
+.top-data-line .col{ 
+    border-bottom: 0;
+}
+.board{
+    height: 50vh;
+    width: 40%;
+    margin-top: 15px;
+}
+.col{
+    border: solid 1px #212529;
+}
+
+.board-block{
+    display: inline;
+}
+.board-block .left-data{
+    background: rebeccapurple;
+    display: inline-block;
+}

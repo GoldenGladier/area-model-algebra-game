@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/itemMenu.css';
 import Tilt from 'react-vanilla-tilt';
-// import images from '../images/'
 
 class itemMenu extends React.Component{
     constructor(props) {
