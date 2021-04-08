@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+// IMPORTANDO COMPONENTES
+import ItemMenu from './components/itemMenu';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Choose Your Level!</h1>
+      <div className="content">
+        <ItemMenu name="Low" number="01"/>
+        <ItemMenu name="Low-Medium" number="02"/>
+        <ItemMenu name="Medium" number="03"/>
+        <ItemMenu name="High" number="04"/>
+        <ItemMenu name="Very High" number="05"/>
+        <ItemMenu name="Insane" number="06"/>        
+      </div>
     </div>
   );
 }
